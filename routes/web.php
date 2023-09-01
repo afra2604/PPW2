@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/halamanUtama', function () {
     return view('halamanUtama',[
-        "name" => "Lala",
-        "email" => "lala@gmail.com"
+        "name" => "Afra",
+        "email" => "afra@gmail.com"
         ]);
 });
