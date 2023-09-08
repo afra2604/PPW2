@@ -2,6 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/boom',[MencobaController::class, 'boomesport']);
+Route::get('/prx',[MencobaController::class, 'prxsport']);
+Route::get('/fnatic',[MencobaController::class, 'fnaticesport']);
+Route::get('/fpx',[MencobaController::class, 'fpxesport']);
+Route::get('/',[MencobaController::class, 'beranda']);
+
+
+Route::get('/boom',[MencobaController::class,'boomesport']);
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +22,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/halamanUtama', function () {
-    return view('halamanUtama',[
-        "name" => "Afra",
-        "email" => "afra@gmail.com"
-        ]);
-});
+// Route::get('/halamanUtama', function () {
+//     return view('halamanUtama',[
+//         "name" => "Afra",
+//         "email" => "afra@gmail.com"
+//         ]);
+// });
